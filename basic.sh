@@ -12,7 +12,8 @@ sudo apt install --assume-yes --no-install-recommends ubuntu-restricted-extras \
 	p7zip-full \
 	p7zip-rar \
 	flatpak \
-	git
+	git \
+	curl
 
 # Clean installation files
 sudo apt --assume-yes autoremove && sudo apt --assume-yes autoclean
