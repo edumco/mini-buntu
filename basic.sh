@@ -11,7 +11,8 @@ sudo apt install --assume-yes --no-install-recommends ubuntu-restricted-extras \
 	net-tools \
 	p7zip-full \
 	p7zip-rar \
-	flatpak
+	flatpak \
+	git
 
 # Clean installation files
 sudo apt --assume-yes autoremove && sudo apt --assume-yes autoclean
