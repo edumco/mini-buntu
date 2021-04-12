@@ -18,5 +18,7 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      
       - name: Install
-        run: sudo sh basic.sh
+        run: sudo ./basic.sh
