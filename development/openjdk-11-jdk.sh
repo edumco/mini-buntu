@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Installs OpenJDK 11
 sudo apt install --assume-yes openjdk-11-jdk
@@ -7,4 +7,6 @@ sudo apt install --assume-yes openjdk-11-jdk
 echo "export JAVA_HOME=/usr/bin/" > ~/.profile
 
 # Load the profile
-source ~/.profile
+
+# shellcheck source=/dev/null
+source /home/"$USER"/.profile
