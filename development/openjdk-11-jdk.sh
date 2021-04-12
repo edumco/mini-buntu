@@ -7,5 +7,6 @@ sudo apt install --assume-yes openjdk-11-jdk
 echo "export JAVA_HOME=/usr/bin/" > ~/.profile
 
 # Load the profile
-# shellcheck source=/home/root/.profile
+
+# shellcheck source=/dev/null
 source /home/"$USER"/.profile
