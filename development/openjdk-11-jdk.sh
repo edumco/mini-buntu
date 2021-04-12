@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Installs OpenJDK 11
 sudo apt install --assume-yes openjdk-11-jdk
