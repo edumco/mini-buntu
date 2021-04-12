@@ -8,8 +8,7 @@ sudo apt --assume-yes autoremove && sudo apt --assume-yes autoclean
 sudo add-apt-repository "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
 
 # Install some basic utilities
-sudo apt install --assume-yes 
-	ubuntu-restricted-extras \
+sudo apt install --assume-yes ubuntu-restricted-extras \
 	net-tools \
 	p7zip-full \
 	p7zip-rar \
