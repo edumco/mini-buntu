@@ -21,4 +21,4 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Install
-        run: sudo ./basic.sh
+        run: bash basic.sh
