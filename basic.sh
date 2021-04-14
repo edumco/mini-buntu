@@ -13,7 +13,8 @@ sudo apt install --assume-yes --no-install-recommends ubuntu-restricted-extras \
 	p7zip-rar \
 	flatpak \
 	git \
-	curl
+	curl \
+	python3-pip
 
 # Clean installation files
 sudo apt --assume-yes autoremove && sudo apt --assume-yes autoclean
