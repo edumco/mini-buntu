@@ -4,7 +4,7 @@
 sudo apt update
 
 # Skip update on CI environment
-if [ -z ${CI+x} ]; then echo "Skipping upgrade"; else sudo apt --assume-yes upgrade; fi
+if [ -z ${CI+x} ]; then sudo apt --assume-yes upgrade; else echo "Skipping upgrade"; fi
 
 # Enable the Canonical Partners Repository
 sudo add-apt-repository "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
