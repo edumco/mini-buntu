@@ -1,7 +1,10 @@
 #!/bin/sh
 
 # Update system
-sudo apt update && sudo apt --assume-yes upgrade
+sudo apt update
+
+# Skip update on CI environment
+if ${CI+"true"}; then sudo apt --assume-yes upgrade; fi
 
 # Enable the Canonical Partners Repository
 sudo add-apt-repository "deb http://archive.canonical.com/ubuntu $(lsb_release -sc) partner"
@@ -22,4 +25,4 @@ echo "alias pip=pip3" > ~/.profile
 # Clean installation files
 sudo apt --assume-yes autoremove && sudo apt --assume-yes autoclean
 
-rebbot;
+reboot;
