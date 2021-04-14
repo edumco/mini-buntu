@@ -24,5 +24,3 @@ echo "alias pip=pip3" > ~/.profile
 
 # Clean installation files
 sudo apt --assume-yes autoremove && sudo apt --assume-yes autoclean
-
-reboot;
