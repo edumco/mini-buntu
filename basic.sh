@@ -16,5 +16,10 @@ sudo apt install --assume-yes --no-install-recommends ubuntu-restricted-extras \
 	curl \
 	python3-pip
 
+# Adds an alias to redirect pip to pip3
+echo "alias pip=pip3" > ~/.profile
+
 # Clean installation files
 sudo apt --assume-yes autoremove && sudo apt --assume-yes autoclean
+
+rebbot;
